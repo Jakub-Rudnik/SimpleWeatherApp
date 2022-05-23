@@ -1,8 +1,18 @@
 <template>
-  <div id="app">
-    <nav><router-link to="/">Home</router-link> |</nav>
-    <router-view />
-  </div>
+  <v-app>
+    <v-app-bar app color="primary" dark></v-app-bar>
+    <v-main>
+      <router-view />
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss"></style>
+<script>
+export default {
+  name: "App",
+
+  data: () => ({
+    //
+  }),
+};
+</script>
